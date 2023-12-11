@@ -8,7 +8,6 @@ black = "*"
 
 [packages]
 click = "*"
-pyuac = "*"
 pywin32 = "*"
 send2trash = "*"
 

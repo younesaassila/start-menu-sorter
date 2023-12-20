@@ -15,9 +15,15 @@ exclude_folders = [
     "Accessibility",
     "Accessories",
     "Administrative Tools",
-    "PowerShell",
+    # "PowerShell",
     "Startup",
     "System Tools",
+]
+exclude_shortcuts = [
+    "Inkview.lnk",
+    "ProfileChooser.lnk",
+    "VLC media player - reset preferences and cache files.lnk",
+    "VLC media player skinned.lnk",
 ]
 
 
@@ -54,6 +60,7 @@ def sort_start_menu(start_menu_dir: str, dry_run: bool):
             for f in files
             if f.endswith(".lnk")
             and not "uninstall" in f.lower()  # Uninstall shortcuts are a special case
+            and not f in exclude_shortcuts
         ]
         if len(shortcuts) <= 1:
             for shortcut in shortcuts:

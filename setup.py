@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="start-menu-sorter",
-    version="1.0.2",
+    version="1.0.3",
     description="Sorts the Windows start menu",
     url="https://github.com/younesaassila/start-menu-sorter",
     author="Younes Aassila",

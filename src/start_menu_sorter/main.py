@@ -9,6 +9,7 @@ start_menu_dirs = [
     os.path.join(os.environ["PROGRAMDATA"], "Microsoft", "Windows", "Start Menu"),
 ]
 exclude_folders = [
+    "Riot Games",
     "Steam",
     "Thrustmaster",
     # Windows
